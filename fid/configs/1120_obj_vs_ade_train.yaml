@@ -1,0 +1,7 @@
+datasets:
+  - name: stats
+    options:
+      path: stats/ade_train_64.npz
+  - name: stats
+    options:
+      path: stats/20191120_ade_gigasun_acgan_no_background_wo_acloss_hq_64_fid_stats.npz

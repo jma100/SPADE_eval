@@ -1,0 +1,11 @@
+datasets:
+  - name: stats
+    options:
+      path: stats/ade_fid_stats.npz
+  - name: images
+    options:
+      path: /data/vision/torralba/virtualhome/realvirtualhome/SPADE/results/20191120_ade_gigasun_acgan_no_background_wo_acloss_hq_64/test_ade_train_64/images/real_image
+      batch_size: 400
+      num_workers: 12
+      stats_save_path: stats/ade_train_64.npz
+inception_path: /data/vision/torralba/scratch2/tongzhou/inception

@@ -1,0 +1,21 @@
+datasets:
+  # Dataset 1 is using images contained in `../my_generator_res_256_outputs`
+  # with a batch of `400` and `12` data loader workers. The computed fid stats
+  # will be saved at `stats/imagenet_fid_stats.npz`.
+  - name: images
+    options:
+      path: /data/vision/torralba/virtualhome/realvirtualhome/SPADE/results/20191120_ade_gigasun_acgan_no_background_wo_acloss_hq_64/test_latest/images/synthesized_image
+      batch_size: 400
+      num_workers: 12
+      stats_save_path: stats/20191120_ade_gigasun_acgan_no_background_wo_acloss_hq_64_fid_stats.npz
+  # Similar to above, except that it is reading from
+  # `/data/vision/torralba/datasets/imagenet_pytorch/train` and saving to
+  # `generator_fid_stats.npz`.
+  - name: images
+    options:
+      path: /data/vision/torralba/virtualhome/realvirtualhome/SPADE/results/20191120_ade_gigasun_acgan_no_background_wo_acloss_hq_64/test_latest/images/real_image
+      resize_size: 64
+      batch_size: 400
+      num_workers: 12
+      stats_save_path: stats/ade_fid_stats.npz
+inception_path: /data/vision/torralba/scratch2/tongzhou/inception
