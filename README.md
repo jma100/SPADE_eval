@@ -26,4 +26,9 @@ python mIoU.py \
 ````
 
 ### 2. FID score
-* 
+
+In the ````fid```` folder, the ````fid.py```` script computes the fid score. Specify the image dir or computed stats file in a config file (examples in ````fid/configs````) and run:
+
+````
+python fid.py configs/example.yaml
+````
